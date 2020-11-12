@@ -1,0 +1,161 @@
+  <section class="blog light-blue">
+        <div class="container">
+            <div class="global-vertical-padding">
+                <div class="feature">
+                    <div class="col-md-10">
+                        <h3 class="seconday-heading grad-text featured">Featured articles</h3>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="blog.html">
+                            <span class="grad-text view-all">View all</span>
+                                <div class="pink-arrow"><img src="dist/images/arrow-pink.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 global-padding-top">
+                        <div class="col-md-4">
+                            <div>
+                                <div><img src="dist/images/product-image1.jpg" alt=""></div>
+                                <div class="product-text">
+                                    <h3 class="blue-text">Why can't India manufacture high-quality products?</h3>
+                                    <a href="#"><span class="tag pink-text">market</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <div><img src="dist/images/product-image2.jpg" alt=""></div>
+                                <div class="product-text">
+                                    <h3 class="blue-text">This is why Tiruppur is famous for its textile businesses.</h3>
+                                    <a href="#"> <span class="tag pink-text">market</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <div><img src="dist/images/product-image3.jpg" alt=""></div>
+                                <div class="product-text">
+                                    <h3 class="blue-text">10 things to know before you get your garments manufactured.</h3>
+                                    <a href="#"> <span class="tag pink-text">market</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-12 padding-top-sm">
+                    <div class="col-md-4">
+                        <div>
+                            <h3 class="white-text">Follow us</h3>
+                            <div class="social-icon">
+                                <a href="#"> <i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="hl-footer"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footer-spacing">
+                        <div class="footer-spacing">
+                            <h4 class="ft-head-text-style">CALL US</h4>
+                            <span class="ft-contact">info@mjexports.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <h4 class="ft-head-text-style">PHONE</h4>
+                            <span class="ft-contact">91 8888 888 888</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 padding-top-sm">
+                    <div class="col-md-4">
+                        <h3 class="intro-heading white-text">Looking for a vendor? Let’s talk.</h3>
+                        <a href="getin-touch.html"><button class="btn primary-btn ft-btn">contact us<img src="dist/images/arrow.svg "class="primary-button-arrow "></button></a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-spacing">
+                            <h4 class="ft-head-text-style">LINKS</h4>
+                            <div class="col-sm-6">
+                                <ul class="ft-list">
+
+                                    <li> <a href="comapny.html">About Company</a></li>
+                                    </a>
+                                    <li><a href="why-us.html">Why us</a></li>
+                                    <li><a href="offering.html">Offerings</a></li>
+                                </ul>
+                            </div>
+                            <div class=" col-sm-6">
+                                <ul class="ft-list">
+                                    <li><a href="our-clients.html">Clients</a></li>
+                                    <li><a href="getin-touch.html">Get in touch</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="copy"> <span>© 2020 MJ Exports. All rights reserved.</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="ft-head-text-style address-head">OUR ADDRESS</h4>
+                        <div class="address">
+                            <div class="address">
+                                <p> M.J.Exports Oluvapatti, Tiruppur,Coimbatore, Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+<div class="inner-number">
+            <div class="container">
+                <div class="dotted-bg"></div>
+
+                <div class=" global-vertical-padding white-box-padding ">
+                    <h5 class="pink-text ">in numbers</h5>
+                    <div class="grad-box-intro grad-box-intro-modify ">
+                        <h3 class="intro-heading blue-text">Experience of doing the business since generations.</h3>
+                    </div>
+
+                    <div class="white-box-grid">
+                        <div>
+                            <h3 class="grad-text large-text ">40</h3>
+                            <h4 class="introduction blue-text grid-text-padding ">Years of experience</h4>
+                            <div class="hl"></div>
+                        </div>
+                        <div>
+                            <h3 class="grad-text large-text ">10K</h3>
+                            <h4 class="introduction blue-text grid-text-padding ">Orders fullfilled</h4>
+                        </div>
+                        <div>
+                            <h3 class="grad-text large-text ">56+</h3>
+                            <h4 class="introduction blue-text grid-text-padding ">Vendors</h4>
+                        </div>
+                        <div>
+                            <h3 class="grad-text large-text ">20K+</h3>
+                            <h4 class="introduction blue-text grid-text-padding ">Designs deliverd</h4>
+                        </div>
+                        <a hreh="# "><button class="btn primary-btn top-margin">our strength<img src="dist/images/arrow.svg "class="primary-button-arrow " alt=""></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
