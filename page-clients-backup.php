@@ -2,7 +2,7 @@
 
 /**
  * Templare Version 1.0.0
- * Template name: Clients
+ * Template name: Clients Backup
  * This page uses ACF fields. Please go to the WordPress dashboard to manage the fields.
  */
 
@@ -49,7 +49,7 @@ get_header(); ?>
 
 
 
-<section class="testimonial global-padding-bottom light-blue section">
+<section class="testimonial light-blue section" data-aos="fade-up">
         <div class="container global-vertical-padding">
             <div class="col-md-4 testimonial-quote ">
             <?php if ( get_field('clients_heading') ) : ?>
@@ -62,29 +62,36 @@ get_header(); ?>
             </div>
          
             <div class="col-md-8 client-testimonial">
-
-            <?php if ( have_rows('testimonials') ) : ?>
-                <div class="testimonial-slider owl-carousel">
-                <?php while( have_rows('testimonials') ) : the_row(); ?>
-                <div class="item">
+                <div class="row">
+                <div class="client-profile-wrap">
+                    <div class="testi-img">
+                        <?php if ( get_field('testimonial_image') ) : ?>
+                            <div class="client-profile">
+                            <img src="<?php echo get_field('testimonial_image')["url"]; ?>" alt="<?php echo get_field('testimonial_image')["alt"]; ?>">
+                            </div>
+                        <?php endif; ?>
+                        <div class="exp-grad-box testi-grad"></div>
+                        
+                </div>
+                </div>
                 <div class="client-testimonial-wrap">
                     <div class="testi-box white-bg ">
                         <div class="grad-box-intro testi-content-align ">
                             <div class="quote">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/comma.svg" alt="">
                             </div>
-                            <div class="introduction testimonial-content blue-text">
-                                <?php if ( get_sub_field('testimonial_content') ) : ?>
-                                    <p><?php echo get_sub_field('testimonial_content'); ?></p>
+                            <div class="introduction blue-text grad-box-intro testi-content ">
+                                <?php if ( get_field('testimonial_content') ) : ?>
+                                    <p><?php echo get_field('testimonial_content'); ?></p>
                                 <?php endif; ?>
                                 
                             </div>
-                            <?php if ( get_sub_field('name_of_the_client') ) : ?>
-                                <h3 class="grad-text client-intro "><?php echo get_sub_field('name_of_the_client'); ?></h3>
+                            <?php if ( get_field('name_of_the_client') ) : ?>
+                                <h3 class="grad-text client-intro "><?php echo get_field('name_of_the_client'); ?></h3>
                             <?php endif; ?>
                             
-                            <?php if ( get_sub_field('name_of_the_company') ) : ?>
-                                <h5 class="introduction blue-text "><?php echo get_sub_field('name_of_the_company'); ?></h5>
+                            <?php if ( get_field('name_of_the_company') ) : ?>
+                                <h5 class="blue-text "><?php echo get_field('name_of_the_company'); ?></h5>
                             <?php endif; ?>
                             
                         
@@ -92,12 +99,6 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
-                </div>
-                <?php endwhile; ?>
-                </div>
-            <?php endif; ?>
-            
-            
                 </div>
             </div>
 

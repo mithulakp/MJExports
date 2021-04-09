@@ -228,7 +228,7 @@ get_header(); ?>
         </div>
         </div>
     </section>
-
+    <?php if ( get_field('featured_posts') ) : ?>
     <section class="blog light-blue">
         <div class="container">
             <div class="global-vertical-padding">
@@ -280,6 +280,6 @@ get_header(); ?>
                 </div>
             </div>
     </section>
-
+    <?php endif; ?>
 <?php
 get_footer();

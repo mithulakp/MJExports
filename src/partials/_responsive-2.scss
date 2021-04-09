@@ -1,16 +1,15 @@
-@media only screen and (max-width: 450px) and (min-width: 0) {
+@media only screen and (max-width: 650px) and (min-width: 0) {
     .banner-title{
         width: 100%;
     }
     .primary-heading{
         font-size: 35px;
         letter-spacing: normal;
-        line-height:.85;
     }
     .home-banner .primary-heading{
-        font-size: 70px;
+        font-size: 40px;
     }
-    .btn{
+    .btn{ 
         width: 100%;
         text-align:center;
         img{
@@ -355,6 +354,7 @@
     }
     .client-testimonial{
         padding-left: 0;
+        padding-right: 0;
         img{
             width: 100%;
         }
@@ -368,7 +368,7 @@
     }
     .testimonial{
         height: auto;
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
     .client-profile-wrap{
         width: 100%;

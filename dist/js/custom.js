@@ -1,6 +1,3 @@
-const prevIcon = '<img src="dist/images/left.svg"class="prev-btn">Prev';
-const nextIcon = 'Next<img src="dist/images/right.svg"class="next-btn">';
-
 
 $('.banner-slide').owlCarousel({
     loop: true,
@@ -20,7 +17,29 @@ $('.banner-slide').owlCarousel({
             items: 1
         }
     }
-})
+});
+
+$('.testimonial-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    pagination: true,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 1000,
+
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 2
+        }
+    }
+});
 
 
 $('.company-slider').owlCarousel({
@@ -31,7 +50,9 @@ $('.company-slider').owlCarousel({
     dots: true,
     autoplay: 1000,
     autoplaySpeed: 1000,
-
+    nav: true,
+    autoplayHoverPause: true,
+    navText: [prevIcon, nextIcon],
     responsive: {
         0: {
             items: 1
@@ -43,13 +64,13 @@ $('.company-slider').owlCarousel({
             items: 1
         }
     }
-})
+});
 
 /**accordion */
 var accordions = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < accordions.length; i++) {
-    accordions[i].onclick = function() {
+    accordions[i].onclick = function () {
         this.classList.toggle('is-open');
 
         var content = this.nextElementSibling;
@@ -64,13 +85,13 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 /**tab */
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(".tabs-list li a").click(function(e) {
+    $(".tabs-list li a").click(function (e) {
         e.preventDefault();
     });
 
-    $(".tabs-list li").click(function() {
+    $(".tabs-list li").click(function () {
         var tabid = $(this).find("a").attr("href");
         $(".tabs-list li,.tabs div.tab").removeClass("active"); // removing active class from tab
         $(".tab").hide(); // hiding open tab
@@ -84,7 +105,7 @@ $(document).ready(function() {
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -101,11 +122,11 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('.site-header').outerHeight();
 
-$(window).scroll(function(event) {
+$(window).scroll(function (event) {
     didScroll = true;
 });
 
-setInterval(function() {
+setInterval(function () {
     if (didScroll) {
         hasScrolled();
         didScroll = false;
@@ -126,7 +147,7 @@ function hasScrolled() {
         $('.site-header').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
-        if (st + $(window).height() < $(document).height()) {
+        if (st + $(window).height() < $(document).height() && $(this).scrollTop() > 100) {
             $('.site-header').removeClass('nav-up').addClass('nav-down');
         }
     }
@@ -146,12 +167,12 @@ var menu_nav = document.querySelector("#burger");
 var global_menu = document.querySelector('#global_menu');
 var close_btn = document.querySelector('#close-btn');
 var mybody = document.querySelector('body');
-menu_nav.addEventListener('click', function() {
+menu_nav.addEventListener('click', function () {
     global_menu.classList.toggle('active');
     mybody.classList.toggle('menu_active');
 });
 
-close_btn.addEventListener('click', function() {
+close_btn.addEventListener('click', function () {
     global_menu.classList.remove('active');
     mybody.classList.remove('menu_active');
 });

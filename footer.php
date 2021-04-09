@@ -36,7 +36,9 @@
                     </div>
                     <div class="col-md-4 footer-spacing  footer-contact-item">
                         <div class="footer-spacing">
-                            <div class="ft-head-text-style">CALL US</div>
+                        <?php if ( get_field('phone_number_label', 'option') ) : ?>
+                            <div class="ft-head-text-style ttu"><?php echo get_field('phone_number_label', 'option'); ?> </div>
+                        <?php endif; ?>
                             <span class="ft-contact">
                                 <?php if ( get_field('email_address', 'option') ) : ?>
                                     <a href="mailto:<?php echo get_field('email_address', 'option'); ?>" title="Click here to send us an email.">
@@ -48,7 +50,10 @@
                     </div>
                     <div class="col-md-4 footer-contact-item">
                         <div>
-                            <div class="ft-head-text-style">PHONE</div>
+                        <?php if ( get_field('phone_number', 'option') ) : ?>
+                            <div class="ft-head-text-style ttu"><?php echo get_field('phone_number', 'option'); ?></div>
+                        <?php endif; ?>
+                        
                             <span class="ft-contact">
 							<?php if ( get_field('phone_number', 'option') ) : ?>
 									<?php echo get_field('phone_number', 'option'); ?>
@@ -110,7 +115,26 @@
         </div>
     </footer>
 
+<?php if ( have_rows('tracking_pixels', 'option') ) : ?>
+
+<?php while( have_rows('tracking_pixels', 'option') ) : the_row(); ?>
+
+<?php if(get_sub_field('pixel_location','option')=="footer"){
+    echo get_sub_field('pixel_code','option');
+}  ?>	
+
+<?php endwhile; ?>
+
+<?php endif; ?>
+
+<script>
+    const prevIcon = '<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/left.svg">';
+    const nextIcon = '<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/right.svg">';
+</script>
+
 <?php wp_footer(); ?>
+
+
 
 </body>
 </html>

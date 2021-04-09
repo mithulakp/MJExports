@@ -159,7 +159,7 @@ get_header(); ?>
 <!-- Featured Post -->
 <section class="why-us-blog white-bg section">
         <div class="container">
-            <div class="col-md-4 global-top-padding tac" data-aos="fade-up" >
+            <div class="col-md-5 global-top-padding tac" data-aos="fade-up" >
                 <div>
                 <?php if ( get_field('blog_small_title') ) : ?>
                     <h4 class="small-title grad-text"><?php echo get_field('blog_small_title'); ?></h4>
@@ -168,7 +168,7 @@ get_header(); ?>
                     
                 </div>
                 <?php if ( get_field('feat_blog_title') ) : ?>
-                    <h3 class="seconday-heading blue-text product-padding"><?php echo get_field('feat_blog_title'); ?></h3>
+                    <h3 class="tertiary-heading blue-text product-padding"><?php echo get_field('feat_blog_title'); ?></h3>
                 <?php endif; ?>
                 
 
@@ -185,7 +185,7 @@ get_header(); ?>
 
             </div>
 
-            <div class="col-md-8 feat-blog-image" data-aos="fade-up"  data-aos-delay="50" >
+            <div class="col-md-7 feat-blog-image" data-aos="fade-up"  data-aos-delay="50" >
             <?php if ( get_field('feature_blog_image') ) : ?>
                         <?php if ( get_field('call_to_action') ) : ?>
                             <a href="<?php echo get_field('call_to_action')["url"]; ?>">

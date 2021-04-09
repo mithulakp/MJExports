@@ -35,24 +35,14 @@ get_header(); ?>
         </div>
 
             <div id="tab1" class="global-padding-bottom global-padding-top-sm" data-aos="fade-up">
-       <div class="year-controlls blue-text">
-        <ul class="year-dots">
-            <li class="controll-dots"></li>
-            <li class="year">1995</li>
-            <li class="controll-dots"></li>
-            <li class="year">2001</li>
-            <li class="controll-dots"></li>
-            <li class="year">2006</li>
-            <li class="controll-dots"></li>
-            <li class="year">2012</li>
-        </ul>
-        </div>
+               
                     <?php if ( get_field('main_heading') ) : ?>
                         <h3 class="bold-text grad-text tac primary-heading"><?php echo get_field('main_heading'); ?></h3>
                     <?php endif; ?>
                    
                 <div class="company-slide padding-top-sm">
                     <div class="owl-carousel company-slider owl-theme">
+
                     <?php if ( have_rows('timeline') ) : ?>
                     
                         <?php while( have_rows('timeline') ) : the_row(); ?>
@@ -67,7 +57,7 @@ get_header(); ?>
                             </div>
                             <div class="col-md-5 col-md-offset-1">
                                 <div class="history-head">
-                                    <h3 class="seconday-heading blue-text">
+                                    <h3 class="tertiary-heading blue-text mtac">
                                         <?php if( get_sub_field('title') ) : ?>
                                             <?php echo get_sub_field('title'); ?>
                                         <?php endif; ?>
@@ -97,16 +87,16 @@ get_header(); ?>
                     <h3 class="primary-heading grad-text tac"><?php echo get_field('team_main_heading'); ?></h3>
                 <?php endif; ?>
             
-                <div class="col-md-12 product-align global-padding-top">
+                <div class="col-md-12 product-align  global-padding-top">
 
              <?php $i=0; if ( have_rows('team_members') ) : ?>
                 <?php while( have_rows('team_members') ) : the_row(); $i++; ?>
-                <div class="col-md-3 col-xs-12 member-card" data-aos="fade-up" data-aos-delay="<?php echo  $i; ?>00">
+                <div class="col-md-3 team-single col-xs-12 member-card" data-aos="fade-up" data-aos-delay="<?php echo  $i; ?>00">
                         <?php if( get_sub_field('image') ) : ?>
                             <img src="<?php echo get_sub_field('image')["url"]; ?>" alt=" <?php echo get_sub_field('image')["alt"]; ?>">
                         <?php endif; ?>
-                        <div class="global-padding-top-sm">
-                            <h4 class="introduction tac bold-text">
+                        <div class="global-padding-bottom-sm">
+                            <h4 class="introduction team-name tac bold-text">
                                 <?php if( get_sub_field('name') ) : ?>
                                     <?php echo get_sub_field('name'); ?>
                                 <?php endif; ?>
@@ -173,11 +163,11 @@ get_header(); ?>
                         <?php endif; ?>
                 </div>
             </div>
-            <div class="col-md-7 col-md-offset-1 strength-accordion blue-text" data-aos="fade-up" data-aos-delay="50">
+            <div class="col-md-7 global-padding-bottom col-md-offset-1 strength-accordion blue-text" data-aos="fade-up" data-aos-delay="50">
 
             <?php if ( have_rows('strengths') ) : ?>
                 <?php while( have_rows('strengths') ) : the_row(); ?>
-                <h3 class="accordion client-intro global-vertical-padding-sm">
+                <h3 class="accordion client-intro accordion-heading">
                     <?php if( get_sub_field('title') ) : ?>
                         <?php echo get_sub_field('title'); ?>
                     <?php endif; ?>

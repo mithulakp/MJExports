@@ -69,16 +69,15 @@ get_header(); ?>
     </div>
 </section>
 
-    <section class="products-area light-blue section" data-aos="fade-up">
+    <section class="products-area light-blue section global-top-padding global-top-padding global-padding-bottom-sm " data-aos="fade-up">
         <div class="container">
-            <div class="global-padding-top"></div>
             <h3 class="seconday-heading blue-text">
                 <?php if ( get_field('products_main_heading') ) : ?>
                     <p><?php echo get_field('products_main_heading'); ?></p>
                 <?php endif; ?>
                 
             </h3>
-            <div class="col-md-12 product-align global-vertical-padding">
+            <div class="col-md-12 product-align">
             <?php if ( have_rows('products_list') ) : ?>
             
                 <?php while( have_rows('products_list') ) : the_row(); ?>
@@ -88,7 +87,7 @@ get_header(); ?>
                    <img src=" <?php echo get_sub_field('image')["url"]; ?>" alt=" <?php echo get_sub_field('image')["alt"]; ?>">
                 <?php endif; ?>
                 
-                    <div class="global-padding-top-sm">
+                    <div class="padding-top-micro">
                         <h5 class="introduction blue-text ">
                             <?php if( get_sub_field('text') ) : ?>
                                 <?php echo get_sub_field('text'); ?>

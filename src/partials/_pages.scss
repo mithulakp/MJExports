@@ -10,7 +10,6 @@ img {
     padding-bottom: 70px;
 }
 
-
 .global-top-padding {
     padding-top: 50px;
 }
@@ -20,11 +19,15 @@ img {
 }
 
 .global-padding-bottom {
-    padding-bottom:70px;
+    padding-bottom: 70px;
 }
 
 .padding-top-sm {
     padding-top: 45px;
+}
+
+.padding-top-micro {
+    padding-top: 5px;
 }
 
 .padding-bottom-sm {
@@ -47,7 +50,8 @@ img {
 .light-blue {
     background-color: #e1ebf2;
 }
-.section{
+
+.section {
     width: 100%;
     float: left;
 }
@@ -57,17 +61,19 @@ img {
     padding-bottom: 70px;
     overflow: hidden;
     height: 590px;
-    &.blog-banner{
+    &.blog-banner {
         padding-bottom: 0;
         height: auto;
     }
-    &-small{
-        height:auto;
+    &-small {
+        height: auto;
     }
 }
-.detailed-blog-banner-main .banner{
-    height:auto;
+
+.detailed-blog-banner-main .banner {
+    height: auto;
 }
+
 .banner-title {
     width: 465px;
     padding-top: 147px;
@@ -75,8 +81,9 @@ img {
 
 .primary-heading {
     font-size: 75px;
-    line-height:65px;
+    line-height: .9;
     font-weight: bold;
+    letter-spacing: -3px;
 }
 
 .banner-content {
@@ -85,12 +92,10 @@ img {
 }
 
 .introduction {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    font-weight: lighter;
 }
 
-  
 .btn {
     height: 60px;
     line-height: 46px;
@@ -101,19 +106,19 @@ img {
     font-weight: bold;
     letter-spacing: 1px;
     text-align: left;
-    padding:0 30px;
+    padding: 0 30px;
     text-transform: uppercase;
     margin: 5px 0px 0px;
     transition: all .5s ease;
     cursor: pointer;
-    &:hover{
+    &:hover {
         background: $secondary-color;
         color: #fff;
     }
-    &--shadowed{
+    &--shadowed {
         box-shadow: 0px 58px 68px 0px rgba(31, 0, 63, 0.18);
     }
-    &--light-shadowed{
+    &--light-shadowed {
         box-shadow: 0px 17px 57px 0px rgba(31, 0, 63, 0.16);
     }
 }
@@ -154,36 +159,120 @@ img {
     width: 540px;
     position: absolute;
     right: 0;
-    height:590px;
+    height: 590px;
     overflow: hidden;
     top: 0;
 }
-.company-slider-image{
+
+.company-slider-image {
     padding-bottom: 20px;
-    img{
+    img {
         border: 10px solid #fff;
         box-shadow: 1px 1px 10px 0px rgba(81, 147, 197, 0.18);
     }
 }
-.slider  img,.banner .owl-carousel .owl-item img{
+
+.slider img,
+.banner .owl-carousel .owl-item img {
     max-width: none;
     width: auto;
 }
 
-.company-slide{
-    .owl-dots{
+.testimonial-content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.testi-box {
+    padding: 0 60px 50px;
+}
+
+.client-testimonial {
+    position: relative;
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+        width: 50px;
+        height: 50px;
+        background: #000 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 48%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        border-radius: 50px;
+    }
+    .owl-nav .owl-next {
+        right: 0;
+        display: flex;
+        margin-right: -20px;
+        font-size: 25px !important;
+    }
+    .owl-nav .owl-prev {
+        left: 0;
+        margin-left: -20px;
+        display: flex;
+        font-size: 25px !important;
+    }
+}
+
+.company-slide {
+    position: relative;
+    .owl-dots {
         width: 20px;
         left: 50%;
         margin-left: -50px;
         top: 50%;
         position: absolute;
     }
-    .owl-theme .owl-nav.disabled+.owl-dots{
+    .owl-theme .owl-nav.disabled+.owl-dots {
         position: absolute;
         top: 50%;
     }
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+        width: 50px;
+        height: 50px;
+        background: #fff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 48%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transition: opacity .25s ease;
+        &.disabled {
+            opacity: 0;
+        }
+        img {
+            max-width: 20px;
+        }
+        &:hover {
+            opacity: .6;
+        }
+        @media screen and (max-width: 768px) {
+            top: 28%;
+            margin: 0 !important;
+        }
+    }
+    .owl-nav .owl-next {
+        right: 0;
+        display: flex;
+        margin-right: -20px;
+        font-size: 25px !important;
+    }
+    .owl-nav .owl-prev {
+        left: 0;
+        margin-left: -20px;
+        display: flex;
+        font-size: 25px !important;
+    }
 }
-.side-padded{
+
+.side-padded {
     padding: 0 50px;
 }
 
@@ -214,10 +303,10 @@ img {
     text-align: center;
 }
 
-
-.icon-box{
+.icon-box {
     display: inline-block;
 }
+
 .white-box {
     width: 135px;
     height: 117px;
@@ -230,7 +319,8 @@ img {
     align-items: center;
     justify-content: center;
 }
-.icon{
+
+.icon {
     display: inline-block;
 }
 
@@ -258,6 +348,12 @@ img {
     font-size: 50px;
     line-height: 50px;
     font-weight: normal;
+}
+
+.tertiary-heading {
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
 }
 
 .grad-box-intro {
@@ -301,7 +397,7 @@ img {
     width: 945px;
     height: 598px;
     margin-top: 65px;
-    img{
+    img {
         float: right;
     }
 }
@@ -325,7 +421,6 @@ img {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
-    
 }
 
 .grad-box-intro-modify {
@@ -402,8 +497,16 @@ img {
     background-image: url("../dist/images/dot-bg.png");
 }
 
+.service-icon-list li {
+    min-height: 160px;
+}
+
 .service-list {
     padding-left: 120px;
+}
+
+.service-icon img {
+    width: 65px;
 }
 
 .white-box-content {
@@ -414,48 +517,108 @@ img {
     width: 310px;
 }
 
-
-.contact-option{
+.contact-option {
     width: 100%;
     float: left;
     margin-bottom: 20px;
 }
-.contact_icon{
+
+.contact_icon {
     width: 30px;
     float: left;
 }
-.contact_detail{
+
+.contact_detail {
     width: 70%;
     float: left;
     line-height: 30px;
     padding-left: 10px;
 }
 
+// Clients
+.single-client-logo {
+    text-align: center;
+    img {
+        display: inline-block;
+    }
+}
+
+//Why us
+.accordion-heading {
+    position: relative;
+}
+
+.accordion:after {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
 
 // Blog
-.blog-post-card{
-    &:hover{
-        img{
+.blog-post-card {
+    min-height: 387px;
+}
+
+.blog-content {
+    color: $secondary-color;
+    ul,
+    ol {
+        margin-bottom: 20px;
+    }
+    ul {
+        li {
+            padding-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: #000;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                top: 11px;
+            }
+        }
+    }
+    ol {
+        padding-left: 20px;
+        li {
+            padding-left: 10px;
+            list-style: decimal;
+            padding-bottom: 10px;
+        }
+    }
+    a {
+        color: #0693e3;
+    }
+}
+
+.blog-post-card {
+    &:hover {
+        img {
             opacity: .9;
         }
     }
 }
-.nav-controlls{
+
+.nav-controlls {
     color: #011B4A;
-    li{
+    li {
         display: inline-block;
         margin-right: 5px;
     }
 }
-.controll-arrow{
+
+.controll-arrow {
     padding: 0 30px;
 }
-
 
 // Contact
 .inputform {
     width: 325px;
-    height: 70px;
+    height: 60px;
     background-color: #c1cfd9;
     color: #c1cfd9;
     border: none;
@@ -497,13 +660,36 @@ img {
 ::placeholder {
     color: $secondary-color;
 }
-.inputform.inputmessage{
-    height:auto;
+
+.inputform.inputmessage {
+    height: auto;
 }
 
-.blog-post-card{
-    min-height: 387px;
+// Contact form
+.wpcf7-response-output {
+    width: 100%;
+    float: left;
 }
-.blog-content{
-    color: $secondary-color;
+
+.invalid .wpcf7-response-output {
+    background: #bd3e38;
+    border: none !important;
+    color: #fff;
+    padding: 10px 20px !important;
+    margin-top: 0 !important;
+}
+
+.sent .wpcf7-response-output {
+    background: #62b56a;
+    border: none !important;
+    color: #fff;
+    padding: 10px 20px !important;
+}
+
+.wpcf7-not-valid-tip {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 6px;
+    letter-spacing: 1px;
 }

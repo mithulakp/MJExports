@@ -23,6 +23,21 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<?php if ( have_rows('tracking_pixels', 'option') ) : ?>
+
+	<?php while( have_rows('tracking_pixels', 'option') ) : the_row(); ?>
+
+	<?php if(get_sub_field('pixel_location','option')=="header"){
+
+		echo get_sub_field('pixel_code','option');
+	}  ?>	
+
+	<?php endwhile; ?>
+
+<?php endif; ?>
+
+
 <div id="page" class="site">
 
     <header class="site-header">

@@ -56,7 +56,7 @@ get_header(); ?>
                     
 
                 </div>
-                <div class="global-padding-top-sm">
+                <div class="global-padding-top-sm"   data-aos="fade-up"  data-aos-delay="150">
                     <?php if ( get_field('google_map_location', 'option') ) : ?>
                         <a href="<?php echo get_field('google_map_location', 'option'); ?>" target="_blank" class="">
                     <button class="location-btn"><i class="fa fa-map-marker fa-lg location-icon" aria-hidden="true" ></i>Locate on Google Map</button>
@@ -67,7 +67,7 @@ get_header(); ?>
                     
                 </div>
             </div>
-            <div class="col-md-6 enquiry-form col-md-offset-2 global-vertical-padding blue-text"  data-aos="fade-up" >
+            <div class="col-md-7 enquiry-form col-md-offset-2 global-vertical-padding blue-text"  data-aos="fade-up" >
                 <h3 class="client-intro bold-text">Reach out to us to discuss your goals.</h3>
                 <div class="global-top-padding contact-form-wrap">
                     <?php
