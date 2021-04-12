@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<section class="detailed-blog-banner-main white-bg">
+    <!--<section class="detailed-blog-banner-main white-bg">
         <div class="banner blog-banner-bg">
             <div class="container ">
                 <div class="blog-detail-title">
@@ -24,17 +24,41 @@ get_header();
 					</div>
 
                     <div class="global-vertical-padding blog-banner-image">
-					<?php the_post_thumbnail( 'full' ); ?>
+					   <?php the_post_thumbnail( 'full' ); ?>
                     </div>
                 </div>
             </div>
         </div>
+    </section>-->
+
+
+
+    <section class="white-bg">
+        <div class="banner blog-banner-bg">
+            <div class="container ">
+                <div class="blog-detailed-title">
+                    <h1 class="primary-heading tac blog-detail-banner-head">
+						<?php the_title(); ?>
+					</h1>
+					
+					<div class="col-md-12 tac global-vertical-padding-sm">
+						<span class="blog-date"><?php echo get_the_category( $post->ID )[0]->name;?></span>
+						<span class="blog-date"><?php echo get_the_date(); ?></span>
+					</div>
+                </div> 
+            </div>  
+        </div>              
     </section>
 
+    <section class="container">
+        <div class="blog-banner-image">
+			<?php the_post_thumbnail( 'full' ); ?>
+        </div>
+    </section>
 
-    <section class="details white-bg">
-        <div class="container">
-            <div class="global-vertical-padding introduction blog-content para">
+    <section class="white-bg">
+        <div class="container global-padding-top">
+            <div class="global-padding-bottom introduction blog-content para">
 					<?php the_content(); ?>
 			</div>
 		</div>
