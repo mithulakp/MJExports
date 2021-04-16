@@ -1,10 +1,11 @@
 @media only screen and (min-width: 650px) and (min-width: 0) {
-    #burger{
+    #burger {
         display: none
     }
 }
+
 @media only screen and (max-width: 650px) and (min-width: 0) {
-    #burger{
+    #burger {
         display: block;
     }
     .global-vertical-padding {
@@ -29,7 +30,6 @@
         margin-top: 538px;
         height: 250px;
     }
-  
     .banner-title {
         padding-top: 133px;
         text-align: center;
@@ -50,7 +50,6 @@
         text-align: center;
         padding-top: 29px;
     }
-
     .mj-export-introduction {
         padding-top: 202px;
         width: 276px;
@@ -60,7 +59,6 @@
         font-size: 20px;
         line-height: 29px;
     }
- 
     .icon-box {
         margin-left: 16px;
     }
@@ -72,16 +70,16 @@
         margin-top: 74px;
         height: auto;
     }
-    .logo{
+    .logo {
         padding-top: 14px;
     }
-    .accordion-heading{
+    .accordion-heading {
         padding-right: 30px;
-        &.client-intro{
+        &.client-intro {
             font-size: 16px;
         }
     }
-    .accordion:after{
+    .accordion:after {
         top: 10px;
     }
     .grad-content-padding {
@@ -126,7 +124,6 @@
         margin: 0 auto;
         width: 296px;
     }
-    
     .inner-banner {
         right: 4%;
     }
@@ -187,7 +184,7 @@
         padding: 74px 0px 55px 0px;
         background: linear-gradient(to bottom right, #fd5f52, #fd575c, #fd4368, #f83c6c);
     }
-    .address{
+    .address {
         width: 100%;
     }
     .hl-footer {
@@ -203,7 +200,7 @@
         margin-left: 0px !important;
     }
     .copy {
-       padding-top: 20px;
+        padding-top: 20px;
     }
     .blog-slider {
         overflow: hidden;
@@ -261,7 +258,7 @@
     }
     .blog-date {
         font-size: 12px;
-        padding: 0 5px;
+        padding: 0 5px 45px;
     }
     .hl-blog {
         margin: -9px 7px 0px 159px;
@@ -270,24 +267,25 @@
         margin: -68px 0px 0px 190px;
         padding-bottom: 30px;
     }
-    .detailed-blog-banner-main{
+    .detailed-blog-banner-main {
         height: auto;
     }
     .blog-banner-image {
         width: 100%;
         margin-left: 0;
-        padding-top: 0;
+        padding: 0px;
+        margin-top: -60px;
     }
     .details {
         padding-top: 30px;
-        img{
+        img {
             height: auto !important;
         }
-        p{
+        p {
             line-height: 24px;
         }
     }
-    .para {
+    .paragraph {
         width: 100%;
         padding: 0 5%;
     }
@@ -310,31 +308,60 @@
     .icon-set3 {
         padding-bottom: 20px;
     }
-    .testi-box{
+    .testi-box {
         padding: 10px;
         margin-top: 20px;
     }
-
-
     // Our Company
-    .team-single{
+    .team-single {
         min-height: auto;
-      }
+    }
     //Why us
-    .experience{
+    .experience {
         .service-icon-list li {
             min-height: auto;
             padding-bottom: 0;
         }
-      }
-
-      #company-history{
-        .introduction{
+    }
+    #company-history {
+        .introduction {
             text-align: center;
             margin: 0;
             padding: 0;
             width: 100%;
         }
     }
-
+    .blog-detailed-title {
+        max-width: 85%;
+        padding-top: 100px;
+    }
+    .category-banner {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0px;
+        text-align: center;
+        padding-top: 85px;
+    }
+    .category-title {
+        font-size: 20px;
+        text-align: left;
+    }
+    .category-list li {
+        width: 100%;
+        display: block;
+    }
+    .inline {
+        display: block;
+        width: 93%;
+        margin: 0 auto;
+    }
+    .category-list-content {
+        padding-bottom: 0px;
+        p {
+            padding-bottom: 0px;
+        }
+    }
+    .icon-align {
+        padding-top: 30px;
+    }
 }

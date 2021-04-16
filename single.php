@@ -58,7 +58,7 @@ get_header();
 
     <section class="white-bg">
         <div class="container global-padding-top">
-            <div class="global-padding-bottom introduction blog-content para">
+            <div class="global-padding-bottom introduction blog-content paragraph">
 					<?php the_content(); ?>
 			</div>
 		</div>
